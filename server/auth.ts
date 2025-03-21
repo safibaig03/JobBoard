@@ -76,7 +76,6 @@ export function setupAuth(app: Express) {
         return res.status(400).json({ message: "Username already exists" });
       }
 
-      // Check if email already exists
       const existingEmail = await storage.getUserByEmail(req.body.email);
       if (existingEmail) {
         return res.status(400).json({ message: "Email already exists" });
@@ -87,7 +86,6 @@ export function setupAuth(app: Express) {
         password: await hashPassword(req.body.password),
       });
 
-      // If user is a company, create a company profile
       if (req.body.role === 'company') {
         await storage.createCompany({
           userId: user.id,
