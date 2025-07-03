@@ -116,3 +116,10 @@ The application supports three types of users:
 - GET /api/applications/user/:userId: Get applications by user
 - GET /api/applications/company/:companyId: Get applications by company
 - POST /api/applications: Submit a job application (job seeker role required)
+
+## Connect with Me
+Mirza Safiulla Baig  
+Email: safiullabaig786@gmail.com  
+LinkedIn: https://linkedin.com/in/safibaig03  
+GitHub: https://github.com/safibaig03
+
